@@ -13,6 +13,12 @@ minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   env: production  # to enable google analytics, opengraph, twitter-cards and schema.
   title: Stecnology
@@ -108,9 +114,9 @@ menu:
       name: Search
       url: /search/
       weight: 20
-    - identifier: categories
-      name: Categories
-      url: /categories/
+    - identifier: archives
+      name: Archive
+      url: /archives/
       weight: 10
     - identifier: tags
       name: Tags

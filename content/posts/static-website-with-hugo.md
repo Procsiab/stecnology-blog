@@ -2,6 +2,8 @@
 title: "Static Website With Hugo"
 date: 2023-04-03
 draft: false
+tags: ["hugo","static","blog"]
+description: "An introduction on this blog's components and motivation"
 ---
 ## Finally I decided to run own blog
 
