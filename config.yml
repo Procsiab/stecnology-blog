@@ -20,12 +20,11 @@ outputs:
     - JSON
 
 params:
-  env: production  # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: Stecnology
   description: "Procsiab's mad exoperiments journal"
   keywords: [Blog, Experiments, Technology]
   author: Procsiab
-  # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto  # dark, light
   disableThemeToggle: false
@@ -47,13 +46,10 @@ params:
   tocopen: false
 
   assets:
-    # disableHLJS: true # to disable highlight.js
     disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: ""
+    apple_touch_icon: ""
+    safari_pinned_tab: ""
 
   label:
     text: "Home"
@@ -65,7 +61,7 @@ params:
     enabled: false  # needs to be explicitly set
     title: Stecnology
     description: "Procsiab's mad exoperiments journal"
-    imageUrl: "<img location>"
+    imageUrl: ""
     imageWidth: 120
     imageHeight: 120
     imageTitle: profile cover
@@ -122,13 +118,11 @@ menu:
       name: Tags
       url: /tags/
       weight: 10
+    - identifier: Source
+      url: "https://github.com/procsiab/stecnology-blog"
+      weight: 10
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
