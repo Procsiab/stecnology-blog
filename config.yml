@@ -106,10 +106,6 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 20
     - identifier: archives
       name: Archive
       url: /archives/
@@ -118,9 +114,13 @@ menu:
       name: Tags
       url: /tags/
       weight: 10
-    - identifier: Source
-      url: "https://github.com/procsiab/stecnology-blog"
+    - identifier: search
+      name: Search
+      url: /search/
       weight: 10
+    - identifier: source
+      name: Source
+      url: "https://github.com/procsiab/stecnology-blog"
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
