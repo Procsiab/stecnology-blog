@@ -1,5 +1,5 @@
 ---
-title: "Sustainable Smartphones"
+title: "Sustainable smartphones"
 date: 2023-04-25
 draft: false
 tags: ["smartphone", "lineage", "android"]

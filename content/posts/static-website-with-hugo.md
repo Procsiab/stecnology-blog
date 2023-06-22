@@ -1,5 +1,5 @@
 ---
-title: "Static Website With Hugo"
+title: "Static website with Hugo"
 date: 2023-04-03
 draft: false
 tags: ["hugo","static","blog"]
