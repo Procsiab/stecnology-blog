@@ -15,9 +15,9 @@ While there are a lot of software programs that can enable remote desktop access
 
 Also, this means that an operating system must be running on that machine, to also run that remote desktop software we're supposing to want.
 
-My use case required me to not install anything on the remote machine, and also to access it before the operating system is loaded; therefore I settled my needs on the product category of *KVM over IP*.
+My use case required me to not install anything on the remote machine, and also to access it before the operating system is loaded; therefore I settled my needs on the product category of *KVM over IP* devices.
 
-These products let you connect the remote machine's display output (for video) and its USB inputs (for keyboard and mouse) to the device itself, which in turn runs a piece of software that will let you connect to the KVM device over an IP connection (for example, from the same Wi-Fi network the remote machine is connected to).
+These products let you connect the remote machine's display output (for video) and its USB inputs (for keyboard and mouse) to the device itself, which in turn runs a piece of software that will let you connect to the KVM[^1] device over an IP connection (for example, from the same Wi-Fi network the remote machine is connected to).
 
 ## The title is misleading!
 
@@ -47,7 +47,7 @@ If written on a microSD card and put into that SBC, you can have your PiKVM devi
 
 ## What's special about that NanoPi computer?
 
-At the time of looking for a PiKVM compatible device cheaper than the Raspberry Pi (which prices had skyrocketed starting from the 2020 pandemic) the NanoPi Neo H3 was the cheapest alternative computer I could find on AliExpress (20€). To this cost it must be added (in my case) shipping to Italy (5€) and also the other components required to use all the KVM features:
+At the time of looking for a PiKVM compatible device cheaper than the Raspberry Pi (which prices had skyrocketed starting from the 2020 pandemic) the NanoPi Neo H3 was the cheapest alternative computer I could find on AliExpress (20€). To this price it must be added (in my case) the shipping cost to Italy (5€) and also the other components required to use all the KVM features:
 
 - HDMI to USB capture card
 - HDMI cable
@@ -55,7 +55,7 @@ At the time of looking for a PiKVM compatible device cheaper than the Raspberry 
 - MicroSD memory card
 - Ethernet cable (RJ-45)
 
-The NanoPi Neo has a full USB type A which I will use to plug the HDMI capture card (for streaming the remote machine display output); moreover, since the SBC has no wireless connectivity, it must be plugged into a network device through its Ethernet port. Finally, the NanoPi Neo exposes an OTG[^1] interface on its MicroUSB port, which will also be used to power it up.
+The NanoPi Neo has a full USB type A which I will use to plug the HDMI capture card (for streaming the remote machine display output); moreover, since the SBC has no wireless connectivity, it must be plugged into a network device through its Ethernet port. Finally, the NanoPi Neo exposes an OTG[^2] interface on its MicroUSB port, which will also be used to power it up.
 
 The final cost was roughly 40€ for all the components; on top of that, the NanoPi Neo comes ahead of a "traditional" Raspberry Pi based PiKVM for its compact size, its ability to be powered directly off the host device and (for my specific needs) the pre-installed Ethernet port, since I would prefer a wired network connection for reliability purposes if remotely connecting to the device.
 
@@ -65,4 +65,6 @@ Beware that if using the pre-built system images I referenced in the previous se
 
 **Remember**: the PiKVM is just a Linux software, thus you may install whatever additional application to your KVM over IP device.
 
-[^1]: USB On The Go (OTG) protocol allows a device to act as a peripheral, therefore allowing in our case the NanoPi to present itself as a mouse and keyboard to the connected host device.
+[^1]: KVM stands for keyboard, video and mouse.
+
+[^2]: USB On The Go (OTG) protocol allows a device to act as a peripheral, therefore allowing in our case the NanoPi to present itself as a mouse and keyboard to the connected host device.
